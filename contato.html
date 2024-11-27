@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Café com Bigodes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+    <body>
+        <header>
+            <div class="navbar">
+                <img src="img/bannerr.jpg" alt="Café com bigodes" class="banner">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <nav class="menu">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html" class="active">Bem Vindo!</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="M.V.V.html">M.V.V.</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <form action="https://formsubmit.co/sofia_hoppe@estudante.sesisenai.org.br" method="post">
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                    <label>Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="042be0d3-84fa-4ae8-aaed-2434cda72cac">
+
+                </form>
+            </section>
+            <h2>Informações de Contato</h2>
+            <p>Telefone: (47) 6666-6666</p>                         
+            <p>E-mail: sofia_hoppe@estudante.sesisenai.org.br</p>
+            <p>Endereço: R. Duque de Caxias, 830 - Centro, Timbó - SC</p>
+            <p>	Horário de funcionamento:
+                De Terça a Sábado das 09:00 as 19:00</p>
+        </main>
+        <footer>
+            <p>&copy; 2024 Café com Bigodes</p>
+        </footer>
+        <script src="js.js"></script>
+    </body>
+</html>

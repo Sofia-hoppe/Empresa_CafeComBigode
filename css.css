@@ -1,0 +1,289 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Times', 'Times New Roman', serif;
+    color: white;
+    background-image: url('img/patas.jfif');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #EAE4DE;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .navbar img {
+    width: 300px;
+}
+
+header .menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+header .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #4B4B4B;
+}
+
+/* Navegação */
+nav.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #EAE4DE;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    padding-top: 60px;
+}
+
+nav.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav.menu ul li {
+    padding: 15px 20px;
+}
+
+nav.menu ul li a {
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 18px;
+}
+
+nav.menu.open {
+    right: 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4B4B4B;
+}
+
+/* Formulário e conteúdo principal */
+main section form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main section form label {
+    font-size: 2rem;
+    color: #3b3b3b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+main section form input, main section form textarea {
+    width: 90%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+main section form button {
+    background-color: #6A4E23;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+main section form button:hover {
+    background-color: #4e3d2f;
+}
+
+/* Títulos e parágrafos */
+h1, h2 {
+    text-align: center;
+    color: #3b3b3b;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    margin-bottom: 20px;
+}
+
+/* Containers e imagens */
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text p {
+    font-size: 1.5rem;
+    color: #3b3b3b;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.containerr {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagem {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.botao {
+    padding: 10px 20px;
+    background-color: #EAE4DE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #4B4B4B;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #EAE4DE;
+    font-size: 0.8em;
+}
+
+/* Missão, Visão e Valores */
+.missao-container, .visao-container, .valores-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.imagem-redonda {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.texto-missao, .texto-visao, .texto-valores {
+    max-width: 600px;
+}
+
+.texto-missao h2, .texto-visao h2, .texto-valores h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.texto-missao p, .texto-visao p, .texto-valores p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.menu ul {
+        padding-left: 0;
+    }
+
+    nav.menu ul li a {
+        font-size: 18px;
+    }
+
+    main section form {
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        padding-right: 0;
+        flex: 1;
+    }
+
+    .image img {
+        max-width: 80%;
+    }
+}
